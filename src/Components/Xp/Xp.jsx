@@ -28,7 +28,7 @@ const Xp = () => {
 					<p>1 Year of Experience</p>
 				</div>
 				<div className="card">
-					<h2>SCSS</h2>
+					<h2>jQuery</h2>
 					<p>7 Years Experience</p>
 				</div>
 				<Rings />

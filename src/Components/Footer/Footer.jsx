@@ -1,6 +1,4 @@
 import React from 'react';
-import Form from '../Form/Form';
-import Rings from '../Rings/Rings';
 import TopBar from '../TopBar/TopBar';
 
 import './footer.scss';

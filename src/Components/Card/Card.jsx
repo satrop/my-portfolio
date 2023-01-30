@@ -1,33 +1,29 @@
 import React from 'react';
+import './Card.scss';
 import cardsData from '../../assets/data';
 
 const Card = () => {
 	return (
 		<>
 			{cardsData.map((card, index) => {
+				let codeLink = card.links.linkTwo;
 				return (
-					<div
-						key={index}
-						// tabIndex="0"
-						className="card">
+					<div key={index} className="card">
 						<div className="card__image">
 							<picture>
 								<source
 									media="(max-width: 767px)"
 									srcSet={card.smallImg}
 								/>
-								<img
-									src={card.largeImg}
-									alt=""
-								/>
+								<img src={card.largeImg} alt="" />
 							</picture>
 						</div>
 						<div className="card__title">{card.title}</div>
-						<ul className="card__skills">
+						<div className="skills">
 							{card.skills.map((skill, index) => {
-								return <li key={index}>{skill}</li>;
+								return <span key={index}>{skill}</span>;
 							})}
-						</ul>
+						</div>
 						<ul className="card__links">
 							<li>
 								<a
@@ -36,13 +32,15 @@ const Card = () => {
 									View project
 								</a>
 							</li>
-							<li>
-								<a
-									href={card.links.linkTwo}
-									className="underline-hover">
-									View code
-								</a>
-							</li>
+							{codeLink && (
+								<li>
+									<a
+										href={card.links.linkTwo}
+										className="underline-hover">
+										View code
+									</a>
+								</li>
+							)}
 						</ul>
 					</div>
 				);
