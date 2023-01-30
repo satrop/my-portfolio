@@ -1,0 +1,169 @@
+header {
+	.grid {
+		grid-template-areas:
+			'image'
+			'text';
+	}
+
+	.col__1 {
+		grid-area: image;
+		margin-top: -87px;
+		position: relative;
+		z-index: 1;
+
+		picture {
+			margin-inline: auto;
+			max-width: 174px;
+		}
+	}
+
+	.col__2 {
+		grid-area: text;
+		position: relative;
+		z-index: 2;
+
+		h1 {
+			br {
+				display: none;
+			}
+		}
+	}
+
+	.top-bar {
+		flex-direction: column;
+		align-items: center;
+
+		.social {
+			margin-top: 1.25rem;
+		}
+	}
+
+	.ring-wrapper {
+		position: absolute;
+		top: 124px;
+		left: -342px;
+	}
+
+	h1 {
+		margin-top: 40px;
+		text-align: center;
+
+		span {
+			border-bottom: 4px solid var(--clr-a-100);
+		}
+	}
+
+	p {
+		margin-top: 24px;
+		margin-bottom: 24px;
+		text-align: center;
+	}
+
+	.circle {
+		position: absolute;
+		right: 0;
+		transform: translateX(50%);
+		bottom: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	header {
+		.grid {
+			grid-template-areas: 'image-1 text image-2 image-3';
+			place-items: center;
+		}
+		
+		.col__1 {
+			margin-top: -162px;
+			grid-column: image-2 / image-3;
+			grid-row: image-1 / image-2;
+			position: relative;
+
+			picture {
+				max-width: unset;
+			}
+		}
+
+		.col__2 {
+			grid-column: image-1 / image-2;
+
+			h1 {
+				padding-right: 100px;
+				padding-right: 20%;
+
+				br {
+					display: block;
+				}
+			}
+		}
+
+		.ring-wrapper {
+			top: 80px;
+		}
+
+		h1 {
+			margin-top: 90px;
+			text-align: left;
+		}
+
+		p {
+			margin-top: 60px;
+			margin-bottom: 34px;
+			max-width: 380px;
+			text-align: left;
+		}
+
+		.top-bar {
+			flex-direction: row;
+			justify-content: space-between;
+			padding-right: 20px;
+
+			.social {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	header {
+		.col__2 {
+			h1 {
+				br {
+					display: none;
+				}
+			}
+		}
+
+		.circle {
+			right: 100%;
+			bottom: 100px;
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	header {
+		p {
+			margin-top: 43px;
+			margin-bottom: 66px;
+		}
+
+		.col__1 {
+			picture {
+				margin-right: 0;
+			}
+		}
+
+		.col__2 {
+			h1 {
+				padding-right: 10%;
+
+				br {
+					display: none;
+				}
+			}
+		}
+	}
+}

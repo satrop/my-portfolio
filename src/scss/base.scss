@@ -1,0 +1,66 @@
+:root {
+	//Colors
+	--clr-n-100: hsl(0, 0%, 8%); // Black
+	--clr-n-200: hsl(0, 0%, 14%); // Dark Gray
+	--clr-n-300: hsl(0, 0%, 85%); // Light Gray
+	--clr-n-400: hsl(0, 0%, 100%); // White
+
+	--clr-a-100: hsl(153, 71%, 59%); // Green
+	--clr-a-200: hsla(7, 100%, 68%); // Red
+
+	//Fonts
+	--ff-100: 'Space Grotesk', sans-serif;
+
+	--fw-r: 500; // Med
+	--fw-b: 700; // Bld
+
+	--fs-s: 1.125rem; // 18 - Body
+	--fs-m: 1.5rem; // 24 - H3
+	--fs-l: 3rem; // 48 - H2
+	--fs-xl: 2.5rem; // 40 - H1
+
+	--lh-s: 1.75rem; // 28 - Body
+	--lh-m: 2rem; // 32 - H3
+	--lh-l: 3.5rem; // 56 - H2
+	--lh-xl: 2.5rem; // 40 - H1
+
+	--ls-l: -1.5px; // - H2
+	--ls-xl: -2.5px; // - H1
+
+	--trans-dur: 0.3s ease-in-out;
+
+	--pad: 0.89rem;
+}
+
+@media (min-width: 768px) {
+	:root {
+		--fs-xl: 4.5rem; // 72 - H1
+
+		--lh-xl: 4.5rem; // 72 - H1
+
+		--pad: 1.785rem;
+	}
+}
+
+@media (min-width: 1440px) {
+	:root {
+		--fs-xl: 5.5rem; // 88 - H1
+
+		--lh-xl: 5.5rem; // 88 - H1
+	}
+}
+
+body {
+	background: var(--clr-n-100);
+	font-family: var(--ff-100);
+	font-weight: var(--fw-r);
+	line-height: var(--lh-s);
+	color: var(--clr-n-300);
+}
+
+.container {
+	width: min(95%, 1110px);
+	margin-inline: auto;
+	position: relative;
+	padding-inline: var(--pad);
+}

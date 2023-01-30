@@ -1,0 +1,26 @@
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+	color: var(--clr-n-400);
+}
+
+h1,
+.h1 {
+	font-size: clamp(var(--fs-s), 10vw + 1rem, var(--fs-xl));
+	letter-spacing: var(--ls-xl);
+	line-height: var(--lh-xl);
+}
+
+h2,
+.h2 {
+	font-size: clamp(var(--fs-m), 5vw + 1rem, var(--fs-l));
+	letter-spacing: var(--ls-l);
+	line-height: var(--lh-l);
+}
+
+a {
+	color: inherit;
+}
