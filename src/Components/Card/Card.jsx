@@ -27,6 +27,7 @@ const Card = () => {
 						<ul className="card__links">
 							<li>
 								<a
+									target="_blank"
 									href={card.links.linkOne}
 									className="underline-hover">
 									View project

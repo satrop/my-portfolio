@@ -1,8 +1,18 @@
 export default [
 	{
+		title: 'Arch Studio',
+		largeImg: './img/thumbnail-project__13-lg.webp',
+		smallImg: './img/thumbnail-project__13-sm.webp',
+		skills: ['SCSS', 'HTML', 'React.js'],
+		links: {
+			linkOne: 'https://satrop.github.io/arch-studio/#/',
+			linkTwo: 'https://github.com/satrop/arch-studio',
+		},
+	},
+	{
 		title: 'The Planets',
-		largeImg: './img/thumbnail-project-1__lg.webp',
-		smallImg: './img/thumbnail-project-1__sm.webp',
+		largeImg: './img/thumbnail-project__12-lg.webp',
+		smallImg: './img/thumbnail-project__12-sm.webp',
 		skills: ['SCSS', 'HTML', 'React.js'],
 		links: {
 			linkOne: 'https://satrop.github.io/Planets_Fact_Site/',
@@ -11,8 +21,8 @@ export default [
 	},
 	{
 		title: 'Space Tourism',
-		largeImg: './img/thumbnail-project-2__lg.webp',
-		smallImg: './img/thumbnail-project-2__sm.webp',
+		largeImg: './img/thumbnail-project__11-lg.webp',
+		smallImg: './img/thumbnail-project__11-sm.webp',
 		skills: ['SCSS', 'HTML', 'React.js'],
 		links: {
 			linkOne: 'https://satrop.github.io/Space_Tourism/',
@@ -21,8 +31,8 @@ export default [
 	},
 	{
 		title: 'Audiophile',
-		largeImg: './img/thumbnail-project-3__lg.webp',
-		smallImg: './img/thumbnail-project-3__sm.webp',
+		largeImg: './img/thumbnail-project__10-lg.webp',
+		smallImg: './img/thumbnail-project__10-sm.webp',
 		skills: ['SCSS', 'HTML', 'React.js'],
 		links: {
 			linkOne: 'https://satrop.github.io/audiophile/#/',
@@ -31,8 +41,8 @@ export default [
 	},
 	{
 		title: 'Aperio Group',
-		largeImg: './img/thumbnail-project-4__lg.webp',
-		smallImg: './img/thumbnail-project-4__sm.webp',
+		largeImg: './img/thumbnail-project__9-lg.webp',
+		smallImg: './img/thumbnail-project__9-sm.webp',
 		skills: ['SCSS', 'HTML', 'jQuery'],
 		links: {
 			linkOne: 'https://www.aperiogroup.com/',
@@ -40,8 +50,8 @@ export default [
 	},
 	{
 		title: 'Baker Boyer Bank',
-		largeImg: './img/thumbnail-project-5__lg.webp',
-		smallImg: './img/thumbnail-project-5__sm.webp',
+		largeImg: './img/thumbnail-project__8-lg.webp',
+		smallImg: './img/thumbnail-project__8-sm.webp',
 		skills: ['SCSS', 'HTML', 'jQuery'],
 		links: {
 			linkOne: 'https://www.bakerboyer.com/',
@@ -49,8 +59,8 @@ export default [
 	},
 	{
 		title: 'Omnicell',
-		largeImg: './img/thumbnail-project-6__lg.webp',
-		smallImg: './img/thumbnail-project-6__sm.webp',
+		largeImg: './img/thumbnail-project__7-lg.webp',
+		smallImg: './img/thumbnail-project__7-sm.webp',
 		skills: ['SCSS', 'HTML', 'jQuery'],
 		links: {
 			linkOne: 'https://www.omnicell.com/',
@@ -58,8 +68,8 @@ export default [
 	},
 	{
 		title: 'Westfield Insurance',
-		largeImg: './img/thumbnail-project-7__lg.webp',
-		smallImg: './img/thumbnail-project-7__sm.webp',
+		largeImg: './img/thumbnail-project__6-lg.webp',
+		smallImg: './img/thumbnail-project__6-sm.webp',
 		skills: ['SCSS', 'HTML', 'jQuery'],
 		links: {
 			linkOne: 'https://www.westfieldinsurance.com/',
@@ -67,8 +77,8 @@ export default [
 	},
 	{
 		title: 'Boston Architectural College',
-		largeImg: './img/thumbnail-project-8__lg.webp',
-		smallImg: './img/thumbnail-project-8__sm.webp',
+		largeImg: './img/thumbnail-project__5-lg.webp',
+		smallImg: './img/thumbnail-project__5-sm.webp',
 		skills: ['SCSS', 'HTML', 'jQuery'],
 		links: {
 			linkOne: 'https://the-bac.edu/',
@@ -76,8 +86,8 @@ export default [
 	},
 	{
 		title: 'LSUS',
-		largeImg: './img/thumbnail-project-9__lg.webp',
-		smallImg: './img/thumbnail-project-9__sm.webp',
+		largeImg: './img/thumbnail-project__4-lg.webp',
+		smallImg: './img/thumbnail-project__4-sm.webp',
 		skills: ['SCSS', 'HTML', 'jQuery'],
 		links: {
 			linkOne: 'https://www.lsus.edu/',
@@ -85,8 +95,8 @@ export default [
 	},
 	{
 		title: 'JFI',
-		largeImg: './img/thumbnail-project-10__lg.webp',
-		smallImg: './img/thumbnail-project-10__sm.webp',
+		largeImg: './img/thumbnail-project__3-lg.webp',
+		smallImg: './img/thumbnail-project__3-sm.webp',
 		skills: ['SCSS', 'HTML', 'jQuery'],
 		links: {
 			linkOne: 'https://jfi.org/',
@@ -94,8 +104,8 @@ export default [
 	},
 	{
 		title: 'KUMC',
-		largeImg: './img/thumbnail-project-11__lg.webp',
-		smallImg: './img/thumbnail-project-11__sm.webp',
+		largeImg: './img/thumbnail-project__2-lg.webp',
+		smallImg: './img/thumbnail-project__2-sm.webp',
 		skills: ['SCSS', 'HTML', 'jQuery'],
 		links: {
 			linkOne: 'https://www.kumc.edu/',
@@ -103,8 +113,8 @@ export default [
 	},
 	{
 		title: 'EWEB',
-		largeImg: './img/thumbnail-project-12__lg.webp',
-		smallImg: './img/thumbnail-project-12__sm.webp',
+		largeImg: './img/thumbnail-project__1-lg.webp',
+		smallImg: './img/thumbnail-project__1-sm.webp',
 		skills: ['SCSS', 'HTML', 'jQuery'],
 		links: {
 			linkOne: 'https://www.eweb.org/',
