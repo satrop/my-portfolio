@@ -1,0 +1,278 @@
+.modal {
+	background-color: #fff;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #444;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	margin-top: -50px;
+	line-height: 1.5;
+	transition: all var(--trans-dur);
+	z-index: 300;
+	width: 90%;
+	max-height: 80%;
+	overflow-y: auto;
+	border: 0;
+	font-size: 1.2rem;
+	border-radius: 2rem;
+	display: grid;
+	pointer-events: none;
+	opacity: 0;
+	grid-template-areas:
+		'main'
+		'aside';
+
+	.left-col {
+		grid-area: aside;
+		background-color: #242935;
+		color: #fff;
+
+		.download {
+            margin-left: 50%;
+            margin-top: 4rem;
+            display: block;
+            
+            svg {
+                transform: translateX(-50%);
+                width: 40px;
+				fill: #fff;
+				transition: all var(--trans-dur);
+                display: inline;
+			}
+
+			&:hover {
+				svg {
+					fill: var(--clr-a-100);
+				}
+			}
+		}
+
+		h1,
+		h2 {
+			color: #fff;
+			text-align: center;
+		}
+
+		.content {
+			position: sticky;
+			top: 4rem;
+
+			> section {
+				margin-top: 2rem;
+
+				h2 {
+					text-align: left;
+					font-size: 2rem;
+					margin-bottom: 0.5rem;
+				}
+			}
+
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+
+				li {
+					margin-bottom: 0.25rem;
+				}
+
+				&.skills {
+					display: flex;
+					flex-direction: column;
+					li {
+						width: 100%;
+						height: 8px;
+						font-size: 1rem;
+						margin-bottom: 1.5rem;
+
+						&:nth-child(2) {
+							span::before {
+								transition-delay: 0.25s;
+							}
+						}
+						&:nth-child(3) {
+							span::before {
+								transition-delay: 0.5s;
+							}
+						}
+						&:nth-child(4) {
+							span::before {
+								transition-delay: 0.75s;
+							}
+						}
+						&:nth-child(5) {
+							span::before {
+								transition-delay: 1s;
+							}
+						}
+						&:nth-child(6) {
+							span::before {
+								transition-delay: 1.25s;
+							}
+						}
+						&:nth-child(7) {
+							span::before {
+								transition-delay: 1.5s;
+							}
+						}
+						&:nth-child(8) {
+							span::before {
+								transition-delay: 1.75s;
+							}
+						}
+
+						span {
+							margin-top: 0.3rem;
+							display: block;
+							width: 100%;
+							height: 8px;
+							border-radius: 4px;
+							background-color: rgba(#fff, 0.25);
+							position: relative;
+							overflow: hidden;
+
+							&::before {
+								transition: width 1s ease-in-out;
+								position: absolute;
+								border-radius: 4px;
+								content: '';
+								width: 0;
+								height: 100%;
+								background-color: rgba(#fff, 0.95);
+							}
+						}
+					}
+				}
+			}
+
+			section {
+				border-top: 0;
+			}
+		}
+	}
+
+	.right-col {
+		max-width: 60ch;
+		grid-area: main;
+		margin-inline: auto;
+	}
+
+	> * {
+		padding: 4rem;
+	}
+
+	&.open {
+		margin-top: 0;
+		opacity: 1;
+		pointer-events: all;
+
+		.left-col {
+			.content {
+				ul {
+					&.skills {
+						li {
+							span {
+								&.percent {
+									&--100 {
+										&::before {
+											width: 100%;
+										}
+									}
+
+									&--75 {
+										&::before {
+											width: 75%;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	h1,
+	h2 {
+		font-family: 'EB Garamond', serif;
+		font-size: 2.5rem;
+		font-weight: 500;
+		color: #3f517b;
+		margin-bottom: 1.5rem;
+	}
+
+	.sub-header {
+		text-transform: uppercase;
+		text-align: center;
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: '';
+			width: 2.5rem;
+			height: 4px;
+			background-color: rgba(#fff, 0.25);
+			left: 50%;
+			transform: translateX(-50%);
+			top: -1.5rem;
+		}
+	}
+
+	h3 {
+		font-family: 'Ubuntu', sans-serif;
+		color: #222;
+		font-weight: 400;
+	}
+
+	.date-line {
+		font-size: 0.9rem;
+	}
+
+	ul {
+		margin-top: 1.5rem;
+
+		li {
+			margin-bottom: 1rem;
+		}
+	}
+
+	section + section,
+	.group + .group {
+		margin-top: 2rem;
+		padding-top: 2rem;
+		border-top: 1px solid rgba(#000, 0.15);
+	}
+
+	.education-group + .education-group,
+	.reference-group + .reference-group {
+		margin-top: 1rem;
+	}
+}
+
+@media (min-width: 1000px) {
+	.modal {
+		grid-template-columns: 35% 1fr;
+		grid-template-areas: 'aside main';
+	}
+}
+
+.fade {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(#000, 0.9);
+	z-index: 200;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity var(--trans-dur);
+
+	&.open {
+		opacity: 1;
+		pointer-events: all;
+	}
+}

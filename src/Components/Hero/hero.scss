@@ -1,3 +1,47 @@
+.clippy {
+	clip-path: inset(0 0 0 84px);
+	transition: all var(--trans-dur);
+	display: flex;
+	gap: 1rem;
+
+	button {
+		background-color: transparent;
+		border: 0;
+		cursor: pointer;
+
+		svg {
+			transition: all var(--trans-dur);
+		}
+
+		&:hover {
+			svg {
+				fill: var(--clr-a-100);
+			}
+		}
+	}
+
+	svg {
+		width: 24px;
+		height: 24px;
+		fill: #fff;
+	}
+
+	span {
+		position: relative;
+
+		span {
+			position: absolute;
+			display: block;
+			opacity: 1;
+			background-color: #fff;
+		}
+	}
+
+	&:hover {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
 header {
 	.grid {
 		grid-template-areas:
@@ -73,7 +117,7 @@ header {
 			grid-template-areas: 'image-1 text image-2 image-3';
 			place-items: center;
 		}
-		
+
 		.col__1 {
 			margin-top: -162px;
 			grid-column: image-2 / image-3;
