@@ -36,6 +36,7 @@ const Card = () => {
 							{codeLink && (
 								<li>
 									<a
+										target="_blank"
 										href={card.links.linkTwo}
 										className="underline-hover">
 										View code
