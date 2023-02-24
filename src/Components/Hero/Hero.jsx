@@ -63,6 +63,7 @@ const Hero = () => {
 								<li>
 									<a
 										href="https://github.com/satrop"
+										target="_blank"
 										aria-label="Link to Steve Portas' GitHub Account">
 										<svg viewBox="0 0 25 24">
 											<path
@@ -75,6 +76,7 @@ const Hero = () => {
 								<li>
 									<a
 										href="https://www.frontendmentor.io/profile/satrop"
+										target="_blank"
 										aria-label="Link to Steve Portas' Frontend Mentor Account">
 										<svg viewBox="0 0 26 23">
 											<path d="M13.084.23a.751.751 0 0 0-.736.75v14.267a.75.75 0 1 0 1.5 0V.98a.75.75 0 0 0-.763-.75ZM24.44 4.504a.752.752 0 0 0-.284.064l-6.44 2.875a.752.752 0 0 0 0 1.37l6.44 2.884a.75.75 0 0 0 .612-1.369L19.861 8.13l4.907-2.191a.753.753 0 0 0 .38-.99.752.752 0 0 0-.708-.444ZM1.371 9.663a.752.752 0 0 0-.74.938C2.41 17.447 8.603 22.23 15.685 22.23a.75.75 0 1 0 0-1.501A14.053 14.053 0 0 1 2.083 10.225a.75.75 0 0 0-.712-.561v-.001Z" />
@@ -84,6 +86,7 @@ const Hero = () => {
 								<li>
 									<a
 										href="https://www.linkedin.com/in/steven-portas/"
+										target="_blank"
 										aria-label="Link to Steve Portas' LinkedIn Account">
 										<svg viewBox="0 0 25 24">
 											<path
@@ -96,6 +99,7 @@ const Hero = () => {
 								<li>
 									<a
 										href="https://codepen.io/satrop"
+										target="_blank"
 										aria-label="Link to Steve Portas' Pens">
 										<svg
 											viewBox="0 0 256 256"
@@ -208,7 +212,7 @@ const Hero = () => {
 								</li>
 							</ul>
 							<a
-								className='download'
+								className="download"
 								href="/Steven_Portas_Resume.pdf"
 								title="Download Resume"
 								download>

@@ -1,5 +1,15 @@
 export default [
 	{
+		title: 'Designo',
+		largeImg: './img/thumbnail-project__14-lg.webp',
+		smallImg: './img/thumbnail-project__14-sm.webp',
+		skills: ['SCSS', 'HTML', 'React.js'],
+		links: {
+			linkOne: 'https://satrop.github.io/Designo/',
+			linkTwo: 'https://github.com/satrop/Designo',
+		},
+	},
+	{
 		title: 'Arch Studio',
 		largeImg: './img/thumbnail-project__13-lg.webp',
 		smallImg: './img/thumbnail-project__13-sm.webp',
