@@ -1,9 +1,8 @@
 footer {
 	padding-bottom: 3.75rem;
 
-	.top-bar {
-		border-top: 1px solid var(--clr-n-400);
-		padding-top: 2rem;
-		margin-top: 5rem;
+	.container {
+		border: solid rgba(#fff, .05);
+		border-width: 1px 0 0 0;
 	}
 }

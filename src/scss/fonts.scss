@@ -19,6 +19,20 @@ h2,
 	font-size: clamp(var(--fs-m), 5vw + 1rem, var(--fs-l));
 	letter-spacing: var(--ls-l);
 	line-height: var(--lh-l);
+
+	&.eyebrow {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			left: 0;
+			top: -10px;
+			width: 3rem;
+			height: 3px;
+			background-color: var(--clr-a-100);
+			content: '';
+		}
+	}
 }
 
 a {

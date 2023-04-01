@@ -8,9 +8,7 @@ const Projects = () => {
 	return (
 		<section className="container">
 			<div className="project">
-				<TopBar
-					left={<div className="h1">Projects</div>}
-				/>
+				<TopBar left={<div className="h2 eyebrow">Projects</div>} />
 				<div className="projects-wrapper">
 					<Cards />
 				</div>

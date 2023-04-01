@@ -56,6 +56,7 @@ body {
 	font-weight: var(--fw-r);
 	line-height: var(--lh-s);
 	color: var(--clr-n-300);
+	letter-spacing: .5px;
 }
 
 .container {
@@ -63,4 +64,11 @@ body {
 	margin-inline: auto;
 	position: relative;
 	padding-inline: var(--pad);
+}
+
+section {
+	border: solid rgba(#fff, .05);
+	border-width: 1px 0 0 0;
+	padding-block: 2.5rem;
+	margin-block: 5.75rem;
 }

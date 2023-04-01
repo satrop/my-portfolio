@@ -22,8 +22,12 @@
 			gap: 1.5625rem;
 			list-style: none;
 
-			a {
-				display: block;
+			li {
+				position: relative;
+
+				a {
+					display: block;
+				}
 
 				svg {
 					width: 100%;

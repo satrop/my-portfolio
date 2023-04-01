@@ -39,95 +39,95 @@ export default [
 			linkTwo: 'https://github.com/satrop/Space_Tourism',
 		},
 	},
-	{
-		title: 'Audiophile',
-		largeImg: './img/thumbnail-project__10-lg.webp',
-		smallImg: './img/thumbnail-project__10-sm.webp',
-		skills: ['SCSS', 'HTML', 'React.js'],
-		links: {
-			linkOne: 'https://satrop.github.io/audiophile/#/',
-			linkTwo: 'https://github.com/satrop/audiophile',
-		},
-	},
-	{
-		title: 'Aperio Group',
-		largeImg: './img/thumbnail-project__9-lg.webp',
-		smallImg: './img/thumbnail-project__9-sm.webp',
-		skills: ['SCSS', 'HTML', 'jQuery'],
-		links: {
-			linkOne: 'https://www.aperiogroup.com/',
-		},
-	},
-	{
-		title: 'Baker Boyer Bank',
-		largeImg: './img/thumbnail-project__8-lg.webp',
-		smallImg: './img/thumbnail-project__8-sm.webp',
-		skills: ['SCSS', 'HTML', 'jQuery'],
-		links: {
-			linkOne: 'https://www.bakerboyer.com/',
-		},
-	},
-	{
-		title: 'Omnicell',
-		largeImg: './img/thumbnail-project__7-lg.webp',
-		smallImg: './img/thumbnail-project__7-sm.webp',
-		skills: ['SCSS', 'HTML', 'jQuery'],
-		links: {
-			linkOne: 'https://www.omnicell.com/',
-		},
-	},
-	{
-		title: 'Westfield Insurance',
-		largeImg: './img/thumbnail-project__6-lg.webp',
-		smallImg: './img/thumbnail-project__6-sm.webp',
-		skills: ['SCSS', 'HTML', 'jQuery'],
-		links: {
-			linkOne: 'https://www.westfieldinsurance.com/',
-		},
-	},
-	{
-		title: 'Boston Architectural College',
-		largeImg: './img/thumbnail-project__5-lg.webp',
-		smallImg: './img/thumbnail-project__5-sm.webp',
-		skills: ['SCSS', 'HTML', 'jQuery'],
-		links: {
-			linkOne: 'https://the-bac.edu/',
-		},
-	},
-	{
-		title: 'LSUS',
-		largeImg: './img/thumbnail-project__4-lg.webp',
-		smallImg: './img/thumbnail-project__4-sm.webp',
-		skills: ['SCSS', 'HTML', 'jQuery'],
-		links: {
-			linkOne: 'https://www.lsus.edu/',
-		},
-	},
-	{
-		title: 'JFI',
-		largeImg: './img/thumbnail-project__3-lg.webp',
-		smallImg: './img/thumbnail-project__3-sm.webp',
-		skills: ['SCSS', 'HTML', 'jQuery'],
-		links: {
-			linkOne: 'https://jfi.org/',
-		},
-	},
-	{
-		title: 'KUMC',
-		largeImg: './img/thumbnail-project__2-lg.webp',
-		smallImg: './img/thumbnail-project__2-sm.webp',
-		skills: ['SCSS', 'HTML', 'jQuery'],
-		links: {
-			linkOne: 'https://www.kumc.edu/',
-		},
-	},
-	{
-		title: 'EWEB',
-		largeImg: './img/thumbnail-project__1-lg.webp',
-		smallImg: './img/thumbnail-project__1-sm.webp',
-		skills: ['SCSS', 'HTML', 'jQuery'],
-		links: {
-			linkOne: 'https://www.eweb.org/',
-		},
-	},
+	// {
+	// 	title: 'Audiophile',
+	// 	largeImg: './img/thumbnail-project__10-lg.webp',
+	// 	smallImg: './img/thumbnail-project__10-sm.webp',
+	// 	skills: ['SCSS', 'HTML', 'React.js'],
+	// 	links: {
+	// 		linkOne: 'https://satrop.github.io/audiophile/#/',
+	// 		linkTwo: 'https://github.com/satrop/audiophile',
+	// 	},
+	// },
+	// {
+	// 	title: 'Aperio Group',
+	// 	largeImg: './img/thumbnail-project__9-lg.webp',
+	// 	smallImg: './img/thumbnail-project__9-sm.webp',
+	// 	skills: ['SCSS', 'HTML', 'jQuery'],
+	// 	links: {
+	// 		linkOne: 'https://www.aperiogroup.com/',
+	// 	},
+	// },
+	// {
+	// 	title: 'Baker Boyer Bank',
+	// 	largeImg: './img/thumbnail-project__8-lg.webp',
+	// 	smallImg: './img/thumbnail-project__8-sm.webp',
+	// 	skills: ['SCSS', 'HTML', 'jQuery'],
+	// 	links: {
+	// 		linkOne: 'https://www.bakerboyer.com/',
+	// 	},
+	// },
+	// {
+	// 	title: 'Omnicell',
+	// 	largeImg: './img/thumbnail-project__7-lg.webp',
+	// 	smallImg: './img/thumbnail-project__7-sm.webp',
+	// 	skills: ['SCSS', 'HTML', 'jQuery'],
+	// 	links: {
+	// 		linkOne: 'https://www.omnicell.com/',
+	// 	},
+	// },
+	// {
+	// 	title: 'Westfield Insurance',
+	// 	largeImg: './img/thumbnail-project__6-lg.webp',
+	// 	smallImg: './img/thumbnail-project__6-sm.webp',
+	// 	skills: ['SCSS', 'HTML', 'jQuery'],
+	// 	links: {
+	// 		linkOne: 'https://www.westfieldinsurance.com/',
+	// 	},
+	// },
+	// {
+	// 	title: 'Boston Architectural College',
+	// 	largeImg: './img/thumbnail-project__5-lg.webp',
+	// 	smallImg: './img/thumbnail-project__5-sm.webp',
+	// 	skills: ['SCSS', 'HTML', 'jQuery'],
+	// 	links: {
+	// 		linkOne: 'https://the-bac.edu/',
+	// 	},
+	// },
+	// {
+	// 	title: 'LSUS',
+	// 	largeImg: './img/thumbnail-project__4-lg.webp',
+	// 	smallImg: './img/thumbnail-project__4-sm.webp',
+	// 	skills: ['SCSS', 'HTML', 'jQuery'],
+	// 	links: {
+	// 		linkOne: 'https://www.lsus.edu/',
+	// 	},
+	// },
+	// {
+	// 	title: 'JFI',
+	// 	largeImg: './img/thumbnail-project__3-lg.webp',
+	// 	smallImg: './img/thumbnail-project__3-sm.webp',
+	// 	skills: ['SCSS', 'HTML', 'jQuery'],
+	// 	links: {
+	// 		linkOne: 'https://jfi.org/',
+	// 	},
+	// },
+	// {
+	// 	title: 'KUMC',
+	// 	largeImg: './img/thumbnail-project__2-lg.webp',
+	// 	smallImg: './img/thumbnail-project__2-sm.webp',
+	// 	skills: ['SCSS', 'HTML', 'jQuery'],
+	// 	links: {
+	// 		linkOne: 'https://www.kumc.edu/',
+	// 	},
+	// },
+	// {
+	// 	title: 'EWEB',
+	// 	largeImg: './img/thumbnail-project__1-lg.webp',
+	// 	smallImg: './img/thumbnail-project__1-sm.webp',
+	// 	skills: ['SCSS', 'HTML', 'jQuery'],
+	// 	links: {
+	// 		linkOne: 'https://www.eweb.org/',
+	// 	},
+	// },
 ];

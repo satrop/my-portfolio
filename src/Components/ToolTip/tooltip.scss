@@ -1,0 +1,19 @@
+.tool-tip {
+    background-color: var(--clr-a-100);
+    color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-inline: .5rem;
+    border-radius: .25rem;
+    margin-top: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--trans-dur);
+    white-space: nowrap;
+
+    &.hovered {
+        opacity: 1;
+        margin-top: 10px;
+    }
+}
