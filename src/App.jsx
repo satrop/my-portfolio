@@ -1,21 +1,19 @@
-import Hero from './Components/Hero/Hero';
-import Xp from './Components/Xp/Xp';
-import Projects from './Components/Projects/Projects';
-import Footer from './Components/Footer/Footer';
-import TimeLine from './Components/TimeLine/TimeLine';
+import Navigation from './Components/Navigation';
+import Hero from './Components/Hero';
+import About from './Components/About';
+import Tech from './Components/Tech';
+import Projects from './Components/Projects';
 
 import './scss/main.scss';
 
-function App() {
+export default function App() {
 	return (
-		<main>
-			<Hero />
-			<TimeLine />
-			<Projects />
-			<Xp />
-			<Footer />
-		</main>
+		<div className="Wrapper">
+			<Navigation />
+			<Hero id="top" />
+			<About id="about" />
+			<Tech id="tech" />
+			<Projects id="projects"/>
+		</div>
 	);
 }
-
-export default App;
