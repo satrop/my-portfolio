@@ -1,7 +1,7 @@
 import Navigation from './Components/Navigation';
 import Hero from './Components/Hero';
 import About from './Components/About';
-import Tech from './Components/Tech';
+import Skills from './Components/Skills';
 import Projects from './Components/Projects';
 
 import './scss/main.scss';
@@ -12,8 +12,8 @@ export default function App() {
 			<Navigation />
 			<Hero id="top" />
 			<About id="about" />
-			<Tech id="tech" />
-			<Projects id="projects"/>
+			<Skills id="skills" />
+			<Projects id="projects" />
 		</div>
 	);
 }

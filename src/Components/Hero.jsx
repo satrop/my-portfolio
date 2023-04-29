@@ -6,7 +6,6 @@ import { ImCodepen } from 'react-icons/im';
 import { SiFrontendmentor } from 'react-icons/si';
 import {
 	BsFillEnvelopeFill,
-	BsBrowserChrome,
 	BsGithub,
 	BsFillTelephoneFill,
 	BsCloudArrowDownFill,
@@ -80,7 +79,10 @@ const Hero = ({ id }) => {
 				<article className={`modal ${dialogOpen ? 'open' : ''}`}>
 					<header>
 						<h1>
-							<a href="./Steve_Portas-Resume.pdf.zip" download>
+							<a
+								href="./Steve_Portas-Resume.pdf.zip"
+								download
+								aria-label="Download a PDF of my Résumé">
 								<BsCloudArrowDownFill />
 							</a>
 							Steve Portas
@@ -91,12 +93,6 @@ const Hero = ({ id }) => {
 								<BsFillEnvelopeFill />
 								<a href="mailto:satrop.io@icloud.com?subject=Email from my site: ">
 									satrop.io@icloud.com
-								</a>
-							</li>
-							<li>
-								<BsBrowserChrome />
-								<a href="//www.satrop.io/" target="_blank">
-									satrop.io
 								</a>
 							</li>
 							<li>
@@ -205,6 +201,43 @@ const Hero = ({ id }) => {
 								<li>
 									Communicated with clients to make sure they
 									were 100% happy with their designs.
+								</li>
+							</ul>
+						</div>
+						<div className="group">
+							<h4>Web Designer/Graphic Designer</h4>
+							<h5>Shoe Surfing.com, San Luis Obispo</h5>
+							<div className="date">2006 - 2008</div>
+							<ul>
+								<li>
+									Re-built company site from using tables to
+									divs.
+								</li>
+								<li>
+									Managed the design and development of nearly
+									10 websites.
+								</li>
+								<li>Designed POS for company craft shows.</li>
+							</ul>
+						</div>
+						<div className="group">
+							<h4>Kitchen Manager</h4>
+							<h5>
+								Weatherspoon’s - The Kings Tun, Kingston upon
+								Thames, England
+							</h5>
+							<div className="date">2002 - 2006</div>
+							<ul>
+								<li>
+									I would be in charge of up to six line cooks
+									and six food runners.
+								</li>
+								<li>
+									Held weekly meetings with kitchen staff.
+								</li>
+								<li>
+									Help others climb the ranks within the
+									kitchen and company.
 								</li>
 							</ul>
 						</div>

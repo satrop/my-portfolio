@@ -11,8 +11,8 @@ export default function Navigation() {
 				<NavLink href="#top" text="Top of page" ref={createRef()} />
 				<NavLink href="#about" text="All about me" ref={createRef()} />
 				<NavLink
-					href="#tech"
-					text="Some of the tech I've been using"
+					href="#skills"
+					text="The skills I have"
 					ref={createRef()}
 				/>
 				<NavLink
