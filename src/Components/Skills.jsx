@@ -41,6 +41,7 @@ const Skills = ({ id }) => {
 							<li>InVision</li>
 							<li>InDesign</li>
 							<li>Photoshop</li>
+							<li>Figma</li>
 						</ul>
 					</div>
 				</div>

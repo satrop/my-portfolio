@@ -17,9 +17,8 @@ const About = ({ id }) => {
 					development.
 				</p>
 				<p>
-					I grew up in a tiny town called Bridgwater (yes it's missing
-					an "e", the Vikings stole it, like really!) in England. Yes,
-					I do not have an American accent.
+					I grew up in a tiny town called Bridgwater (it's missing an
+					"e", the Vikings stole it, like really!) in England.
 				</p>
 				<p>
 					Right when I thought I would launch into the world of
