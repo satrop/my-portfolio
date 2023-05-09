@@ -2,11 +2,33 @@ import { createRef } from 'react';
 import NavLink from './NavigationLink';
 import ScrollSpy from 'react-scrollspy-navigation';
 
+import { motion } from 'framer-motion';
+
 import './Navigation.scss';
 
 export default function Navigation() {
+	const nav = {
+		start: {
+			opacity: 0,
+			y: 500,
+		},
+		end: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				delay: 2,
+				duration: 1,
+				ease: 'easeInOut',
+			},
+		},
+	};
+
 	return (
-		<nav className="main-navigation">
+		<motion.nav
+			className="main-navigation"
+			variants={nav}
+			initial="start"
+			animate="end">
 			<ScrollSpy>
 				<NavLink href="#top" text="Top of page" ref={createRef()} />
 				<NavLink href="#about" text="All about me" ref={createRef()} />
@@ -21,6 +43,6 @@ export default function Navigation() {
 					ref={createRef()}
 				/>
 			</ScrollSpy>
-		</nav>
+		</motion.nav>
 	);
 }
