@@ -37,7 +37,6 @@
 		&.skills {
 			gap: 3.25rem;
 			grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-			padding-top: 3.25rem;
 			border-width: 0;
 
 			.tech {
@@ -59,8 +58,6 @@
 	.grid {
 		&.skills {
 			gap: 3.625rem;
-			// grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-			padding-top: 4.5rem;
 		}
 	}
 }
