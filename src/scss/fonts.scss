@@ -9,14 +9,18 @@ h3,
 
 h1,
 .h1 {
-	font-size: clamp(var(--fs-s), 10vw + 1rem, var(--fs-xl));
+	// font-size: clamp(var(--fs-s), 10cqi, var(--fs-xl));
 	line-height: var(--lh-xl);
+
+	font-size: clamp(1.5rem, 10cqi, 5rem);
 }
 
 h2,
 .h2 {
-	font-size: clamp(var(--fs-m), 5vw + 1rem, var(--fs-l));
+	// font-size: clamp(var(--fs-m), 5vw + 1rem, var(--fs-l));
 	line-height: var(--lh-l);
+
+	font-size: clamp(1.25rem, 5cqi, 2rem);
 }
 
 a {
