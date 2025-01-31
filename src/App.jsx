@@ -1,8 +1,8 @@
-import Navigation from './Components/Navigation';
-import Hero from './Components/Hero';
-import About from './Components/About';
-import Skills from './Components/Skills';
-import Projects from './Components/Projects';
+import Navigation from './Components/navigation/Navigation';
+import Hero from './Components/hero/Hero';
+import About from './Components/about/About';
+import Skills from './Components/skills/Skills';
+import Projects from './Components/projects/Projects';
 
 import './scss/main.scss';
 

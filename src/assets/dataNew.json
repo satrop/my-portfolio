@@ -1,6 +1,24 @@
 {
 	"featured": [
 		{
+			"title": "ADML",
+			"largeImg": "./img/thumb__17-lg.jpg",
+			"smallImg": "./img/thumb__17-sm.jpg",
+			"skills": ["SCSS", "HTML", "jQuery"],
+			"links": {
+				"linkOne": "https://myadlm.org/"
+			}
+		},
+		{
+			"title": "Wilsoncenter",
+			"largeImg": "./img/thumb__16-lg.jpg",
+			"smallImg": "./img/thumb__16-sm.jpg",
+			"skills": ["SCSS", "HTML", "jQuery"],
+			"links": {
+				"linkOne": "https://www.wilsoncenter.org/"
+			}
+		},
+    {
 			"title": "Whitman College",
 			"largeImg": "./img/thumb__15-lg.webp",
 			"smallImg": "./img/thumb__15-sm.webp",
@@ -8,8 +26,10 @@
 			"links": {
 				"linkOne": "https://www.whitman.edu/"
 			}
-		},
-		{
+		}
+	],
+	"standard": [
+    {
 			"title": "Designo",
 			"largeImg": "./img/thumb__14-lg.webp",
 			"smallImg": "./img/thumb__14-sm.webp",
@@ -28,9 +48,7 @@
 				"linkOne": "https://satrop.github.io/Planets_Fact_Site/",
 				"linkTwo": "https://github.com/satrop/Planets_Fact_Site"
 			}
-		}
-	],
-	"standard": [
+		},
 		{
 			"title": "Arch Studio",
 			"skills": ["SCSS", "HTML", "React.js"],

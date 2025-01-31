@@ -1,8 +1,8 @@
 import { useCollapse } from 'react-collapsed';
-import StandardCard from './StandardCard';
+import StandardCard from './standard-card/StandardCard';
 
 import './Collapse.scss';
-import './StandardCard.scss';
+import './standard-card/StandardCard.scss';
 
 const Collapse = () => {
 	const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();

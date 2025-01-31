@@ -4,14 +4,13 @@ import { AiOutlineLinkedin } from 'react-icons/ai';
 import { RxFileText } from 'react-icons/rx';
 import { ImCodepen } from 'react-icons/im';
 import { SiFrontendmentor } from 'react-icons/si';
-
 import { motion } from 'framer-motion';
 
-import ToolTip from './ToolTip';
-
+import ToolTip from '../ToolTip';
 import './hero.scss';
-import './Modal.scss';
-import Resume from './Resume';
+import '../Modal.scss';
+import Resume from '../Resume';
+import dataHero from './hero.json';
 
 const Hero = ({ id }) => {
 	const [dialogOpen, setDialogOpen] = useState(false);
@@ -34,7 +33,7 @@ const Hero = ({ id }) => {
 		},
 	};
 
-	const line1 = "I'm\xA0Steve\xA0Portas";
+	const line1 = dataHero.name;
 	const sentence = {
 		end: {
 			transition: { delayChildren: 0.5, staggerChildren: 0.08 },
@@ -103,10 +102,11 @@ const Hero = ({ id }) => {
 						variants={welcome}
 						initial="start"
 						animate="end">
-						Nice to meet you!
+              {dataHero.greeting}
 					</motion.div>
+
 					<motion.h1
-						aria-label="I'm Steve Portas"
+						aria-label="{dataHero.title}"
 						variants={sentence}
 						initial="start"
 						animate="end">
@@ -123,9 +123,7 @@ const Hero = ({ id }) => {
 						})}
 					</motion.h1>
 					<motion.p variants={p} initial="start" animate="end">
-						I'm a frontend engineer specializing and on occasion,
-						designing outstanding digital experiences. I'm focused
-						on building accessible ready sites for humans.
+						{dataHero.text}
 					</motion.p>
 					<nav className="social">
 						<motion.ul
@@ -133,6 +131,7 @@ const Hero = ({ id }) => {
 							variants={icons}
 							initial="start"
 							animate="end">
+
 							<motion.div
 								style={{ display: 'inline-block' }}
 								variants={icon}>
@@ -144,6 +143,7 @@ const Hero = ({ id }) => {
 									<RxFileText />
 								</ToolTip>
 							</motion.div>
+
 							<motion.div
 								style={{ display: 'inline-block' }}
 								variants={icon}>
@@ -156,6 +156,7 @@ const Hero = ({ id }) => {
 									<VscGithubAlt />
 								</ToolTip>
 							</motion.div>
+
 							<motion.div
 								style={{ display: 'inline-block' }}
 								variants={icon}>
@@ -170,6 +171,7 @@ const Hero = ({ id }) => {
 									<SiFrontendmentor />
 								</ToolTip>
 							</motion.div>
+
 							<motion.div
 								style={{ display: 'inline-block' }}
 								variants={icon}>
@@ -184,6 +186,7 @@ const Hero = ({ id }) => {
 									<AiOutlineLinkedin />
 								</ToolTip>
 							</motion.div>
+
 							<motion.div
 								style={{ display: 'inline-block' }}
 								variants={icon}>
@@ -194,6 +197,7 @@ const Hero = ({ id }) => {
 									<ImCodepen />
 								</ToolTip>
 							</motion.div>
+
 						</motion.ul>
 					</nav>
 				</div>

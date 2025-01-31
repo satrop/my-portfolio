@@ -4,7 +4,7 @@ import ScrollSpy from 'react-scrollspy-navigation';
 
 import { motion } from 'framer-motion';
 
-import './Navigation.scss';
+import './navigation.scss';
 
 export default function Navigation() {
 	const nav = {

@@ -13,7 +13,7 @@ const Resume = () => {
 			<header>
 				<h1>
 					<a
-						href="./Steve_Portas-Resume.pdf.zip"
+						href="./Steve-Portas-Resume.pdf.zip"
 						download
 						aria-label="Download a PDF of my Résumé">
 						<BsCloudArrowDownFill />
@@ -46,12 +46,7 @@ const Resume = () => {
 			<section className="profile">
 				<h3>Profile</h3>
 				<p>
-					Experienced Front End Developer with expertise in design,
-					building, testing and maintenance of modern sites.
-					Proficient in various languages, SCSS, JavaScript, jQuery,
-					React and embedded systems. Able to effectively self-manage
-					during independent projects, as well as collaborate as part
-					of a productive team.
+        Experienced Front End Developer with expertise in design, building, testing and maintenance of modern sites. Proficient in various languages, SCSS, JavaScript, jQuery, React and embedded systems. Able to effectively self-manage during independent projects, as well as collaborate as part of a productive team.
 				</p>
 			</section>
 			{/* Skills */}
@@ -59,20 +54,20 @@ const Resume = () => {
 				<h3>Skills</h3>
 				<div className="skills-wrapper">
 					<div className="skill">
-						<h4>Programming Languages</h4>
-						<p>JavaScript (ES6), TypeScript, HTML, CSS/SCSS, PHP</p>
-					</div>
-					<div className="skill">
 						<h4>Libraries & Frameworks</h4>
-						<p>jQuery, React, Astro</p>
+						<p>React, Vue.js, Next.js, jQuery, Tailwind CSS, Bootstrap</p>
 					</div>
 					<div className="skill">
 						<h4>Tools & Platforms</h4>
-						<p>Git, Gulp, Webpack, Netlify, Wordpress</p>
+						<p>Git, npm, Yarn, Webpack, Gulp</p>
 					</div>
 					<div className="skill">
 						<h4>Design</h4>
-						<p>Sketch, InVision, InDesign, Photoshop, Figma</p>
+						<p>Sketch, Photoshop, Figma, Illustrator</p>
+					</div>
+					<div className="skill">
+						<h4>Programming Languages</h4>
+						<p>TypeScript, JavaScript, PHP, C</p>
 					</div>
 				</div>
 			</section>
@@ -80,6 +75,18 @@ const Resume = () => {
 			<section className="employment-section underline underline--wide">
 				<h3>Employment History</h3>
 				<div className="flow">
+        <section className="underline">
+						<h4>Front-End Web Developer</h4>
+						<h5>Interactive Strategies, Remote Walla Walla</h5>
+						<div className="date">2023 - 2025</div>
+						<ul>
+							<li>Collaborated with cross-functional teams to deliver responsive, accessible, and visually appealing web experiences tailored to client needs, adhering to modern design and coding standards.</li>
+							<li>Developed and maintained scalable, performant front-end components using SCSS, JavaScript, and CMS-driven architectures, ensuring seamless integration with back-end systems.</li>
+							<li>Ensured cross-browser compatibility and optimized performance for the latest two versions of all major browsers, prioritizing user experience and accessibility compliance (ADA/WCAG standards).</li>
+							<li>Employed tools like Gulp to streamline workflows, implement vendor prefixes, and enforce consistency across CSS stylesheets.</li>
+							<li>Conducted detailed code reviews and collaborated with team leads to refine processes and uphold best practices in front-end development.</li>
+						</ul>
+					</section>
 					<section className="underline">
 						<h4>Web Development Engineer</h4>
 						<h5>Ingeniux, Walla Walla</h5>
@@ -177,7 +184,7 @@ const Resume = () => {
 				</div>
 			</section>
 			{/* Employment */}
-			<section className="employment-section underline underline--wide">
+			{/* <section className="employment-section underline underline--wide">
 				<h3>Additional Experience</h3>
 				<div className="flow flow--low">
 					<section>
@@ -189,7 +196,7 @@ const Resume = () => {
 						<h5>Shoe Surfing.com, San Luis Obispo</h5>
 					</section>
 				</div>
-			</section>
+			</section> */}
 			{/* Education */}
 			<section className="underline underline--wide">
 				<h3>Education</h3>

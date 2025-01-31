@@ -1,4 +1,4 @@
-import cardsData from '../assets/dataNew';
+import cardsData from '../../assets/dataNew';
 import { FiExternalLink } from 'react-icons/fi';
 import { VscGithubAlt } from 'react-icons/vsc';
 

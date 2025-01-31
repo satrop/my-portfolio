@@ -1,8 +1,8 @@
-import FeaturedCard from './FeaturedCard';
-import Collapse from './Collapse';
+import FeaturedCard from '../featured-card/FeaturedCard';
+import Collapse from '../Collapse';
 import { motion } from 'framer-motion';
-import LineDraw from './LineDraw';
-import TextAnimation from './TextAnimation';
+import LineDraw from '../LineDraw';
+import TextAnimation from '../TextAnimation';
 
 import './projects.scss';
 
