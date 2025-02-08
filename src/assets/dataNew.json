@@ -10,7 +10,7 @@
 			}
 		},
 		{
-			"title": "Wilsoncenter",
+			"title": "Wilson Center",
 			"largeImg": "./img/thumb__16-lg.jpg",
 			"smallImg": "./img/thumb__16-sm.jpg",
 			"skills": ["SCSS", "HTML", "jQuery"],
@@ -29,6 +29,14 @@
 		}
 	],
 	"standard": [
+    {
+			"title": "Easybank",
+			"skills": ["Tailwind", "Next.js", "TypeScript"],
+			"links": {
+				"linkOne": "https://easybank-two-livid.vercel.app//",
+				"linkTwo": "https://github.com/satrop/easybank"
+			}
+		},
     {
 			"title": "Designo",
 			"largeImg": "./img/thumb__14-lg.webp",
