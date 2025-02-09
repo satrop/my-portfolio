@@ -1,6 +1,7 @@
 import { createRef } from 'react';
 import NavLink from './NavigationLink';
 import ScrollSpy from 'react-scrollspy-navigation';
+import ToolTip from '../tooltip/ToolTip';
 
 import { motion } from 'framer-motion';
 
@@ -30,18 +31,18 @@ export default function Navigation() {
 			initial="start"
 			animate="end">
 			<ScrollSpy>
-				<NavLink href="#top" text="Top of page" ref={createRef()} />
-				<NavLink href="#about" text="All about me" ref={createRef()} />
-				<NavLink
-					href="#skills"
-					text="The skills I have"
-					ref={createRef()}
-				/>
-				<NavLink
-					href="#projects"
-					text="Projects I've worked on"
-					ref={createRef()}
-				/>
+				<ToolTip content="Go to top of page">
+					<NavLink href="#top" text="Top of page" ref={createRef()} />
+				</ToolTip>
+				<ToolTip content="Learn all about me">
+					<NavLink href="#about" text="All about me" ref={createRef()} />
+				</ToolTip>
+				<ToolTip content="See my skills">
+					<NavLink href="#skills" text="The skills I have" ref={createRef()} />
+				</ToolTip>
+				<ToolTip content="View my projects">
+					<NavLink href="#projects" text="Projects I've worked on" ref={createRef()} />
+				</ToolTip>
 			</ScrollSpy>
 		</motion.nav>
 	);

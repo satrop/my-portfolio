@@ -39,6 +39,10 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @media (min-width: 1800px) {
     .main-navigation {
         left: 20%;

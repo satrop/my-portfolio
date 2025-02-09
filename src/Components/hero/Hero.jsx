@@ -6,11 +6,11 @@ import { ImCodepen } from 'react-icons/im';
 import { SiFrontendmentor } from 'react-icons/si';
 import { motion } from 'framer-motion';
 
-import ToolTip from '../ToolTip';
 import './hero.scss';
-import '../Modal.scss';
-import Resume from '../Resume';
+import '../modal/Modal.scss';
+import Resume from '../resume/Resume';
 import dataHero from './hero.json';
+import ToolTip from '../tooltip/ToolTip';
 
 const Hero = ({ id }) => {
 	const [dialogOpen, setDialogOpen] = useState(false);
@@ -104,7 +104,6 @@ const Hero = ({ id }) => {
 						animate="end">
               {dataHero.greeting}
 					</motion.div>
-
 					<motion.h1
 						aria-label="{dataHero.title}"
 						variants={sentence}
@@ -125,6 +124,7 @@ const Hero = ({ id }) => {
 					<motion.p variants={p} initial="start" animate="end">
 						{dataHero.text}
 					</motion.p>
+
 					<nav className="social">
 						<motion.ul
 							className="social"
@@ -132,71 +132,72 @@ const Hero = ({ id }) => {
 							initial="start"
 							animate="end">
 
-							<motion.div
+							<motion.li
 								style={{ display: 'inline-block' }}
 								variants={icon}>
-								<ToolTip
-									isButton={true}
-									content="Résumé"
-									onClick={openDialog}
-									label={'View Steves résumé'}>
-									<RxFileText />
-								</ToolTip>
-							</motion.div>
+								<a href="#" onClick={openDialog}>
+									<ToolTip
+										isButton={true}
+										content="Résumé"
+										label={'View Steves résumé'}>
+										<RxFileText />
+									</ToolTip>
+								</a>
+							</motion.li>
 
-							<motion.div
+							<motion.li
 								style={{ display: 'inline-block' }}
 								variants={icon}>
-								<ToolTip
-									content="GitHub"
-									label={
-										"Link to Steve Portas' GitHub Account"
-									}
-									link={'https://github.com/satrop'}>
-									<VscGithubAlt />
-								</ToolTip>
-							</motion.div>
+								<a href="https://github.com/satrop" target="_blank" rel="noopener noreferrer">
+									<ToolTip
+										content="GitHub"
+										label={
+											"Link to Steve Portas' GitHub Account"
+										}>
+										<VscGithubAlt />
+									</ToolTip>
+								</a>
+							</motion.li>
 
-							<motion.div
+							<motion.li
 								style={{ display: 'inline-block' }}
 								variants={icon}>
-								<ToolTip
-									content="Frontend Mentor"
-									label={
-										"Link to Steve Portas' Frontend Mentor Account"
-									}
-									link={
-										'https://www.frontendmentor.io/profile/satrop'
-									}>
-									<SiFrontendmentor />
-								</ToolTip>
-							</motion.div>
+								<a href="https://www.frontendmentor.io/profile/satrop" target="_blank" rel="noopener noreferrer">
+									<ToolTip
+										content="Frontend Mentor"
+										label={
+											"Link to Steve Portas' Frontend Mentor Account"
+										}>
+										<SiFrontendmentor />
+									</ToolTip>
+								</a>
+							</motion.li>
 
-							<motion.div
+							<motion.li
 								style={{ display: 'inline-block' }}
 								variants={icon}>
-								<ToolTip
-									content="LinkedIn"
-									label={
-										"Link to Steve Portas' LinkedIn Account"
-									}
-									link={
-										'https://www.linkedin.com/in/steven-portas/'
-									}>
-									<AiOutlineLinkedin />
-								</ToolTip>
-							</motion.div>
+								<a href="https://www.linkedin.com/in/steven-portas/" target="_blank" rel="noopener noreferrer">
+									<ToolTip
+										content="LinkedIn"
+										label={
+											"Link to Steve Portas' LinkedIn Account"
+										}>
+										<AiOutlineLinkedin />
+									</ToolTip>
+								</a>
+							</motion.li>
 
-							<motion.div
+							<motion.li
 								style={{ display: 'inline-block' }}
 								variants={icon}>
-								<ToolTip
-									content="CodePen"
-									label={"Link to Steve Portas' Pens"}
-									link={'https://codepen.io/satrop'}>
-									<ImCodepen />
-								</ToolTip>
-							</motion.div>
+								<a href="https://codepen.io/satrop" target="_blank" rel="noopener noreferrer">
+									<ToolTip
+										content="CodePen"
+										label={"Link to Steve Portas' Pens"}>
+										<ImCodepen />
+									</ToolTip>
+								</a>
+							</motion.li>
 
 						</motion.ul>
 					</nav>

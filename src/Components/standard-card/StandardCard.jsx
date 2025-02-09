@@ -1,47 +1,53 @@
-import cardsData from '../../assets/dataNew';
+import cardsData from './StandardCard.json';
 import { FiExternalLink } from 'react-icons/fi';
 import { VscGithubAlt } from 'react-icons/vsc';
 
+import ToolTip from '../tooltip/ToolTip';
+import './StandardCard.scss';
+
 const StandardCard = () => {
-	return (
-		<>
-			{cardsData.standard.map((card, i) => {
-				let cardLink = card.links.linkOne;
-				return (
-					<div key={i} className="standard-card">
-						<div className="standard-card__info">
-							<div className="standard-card__title">
-								{card.title}
-							</div>
-							<div className="skills">
-								{card.skills.map((skill, i) => {
-									return <span key={i}>{skill}</span>;
-								})}
-							</div>
-							<ul className="standard-card__links">
-								<li>
-									<a
-										target="_blank"
-										href={card.links.linkOne}>
-										<FiExternalLink />
-									</a>
-								</li>
-								{card.links.linkTwo && (
-									<li>
-										<a
-											target="_blank"
-											href={card.links.linkTwo}>
-											<VscGithubAlt />
-										</a>
-									</li>
-								)}
-							</ul>
-						</div>
-					</div>
-				);
-			})}
-		</>
-	);
+  return (
+    <div className="standard-cards-wrapper">
+      {Object.keys(cardsData.standard).map((sectionKey, index) => {
+        const section = cardsData.standard[sectionKey];
+        return (
+          <div key={index} className="standard-cards-section">
+            <div className="standard-cards-title">
+              <h2>{section.title}</h2>
+            </div>
+            {section.projects.map((project, i) => (
+              <div key={i} className="standard-card">
+                <div className="standard-card__title">{project.title}</div>
+                <ul className="standard-card__skills">
+                  {project.skills.map((skill, j) => (
+                    <li key={j}>{skill}</li>
+                  ))}
+                </ul>
+                <ul className="standard-card__links">
+                  <li>
+                    <ToolTip content="Visit Site">
+                      <a target="_blank" href={project.links.linkOne}>
+                        <FiExternalLink />
+                      </a>
+                    </ToolTip>
+                  </li>
+                  {project.links.linkTwo && (
+                    <li>
+                      <ToolTip content="View Code">
+                        <a target="_blank" href={project.links.linkTwo}>
+                          <VscGithubAlt />
+                        </a>
+                      </ToolTip>
+                    </li>
+                  )}
+                </ul>
+              </div>
+            ))}
+          </div>
+        );
+      })}
+    </div>
+  );
 };
 
 export default StandardCard;

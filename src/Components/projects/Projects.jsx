@@ -1,5 +1,6 @@
 import FeaturedCard from '../featured-card/FeaturedCard';
-import Collapse from '../Collapse';
+import StandardCard from '../standard-card/StandardCard';
+
 import { motion } from 'framer-motion';
 import LineDraw from '../LineDraw';
 import TextAnimation from '../TextAnimation';
@@ -33,8 +34,10 @@ const Projects = ({ id }) => {
 					whileInView="end">
 					<div className="projects-wrapper">
 						<FeaturedCard />
-						<Collapse />
 					</div>
+            <div className="standard-card-wrapper">
+              <StandardCard />
+            </div>
 				</motion.div>
 			</div>
 		</section>

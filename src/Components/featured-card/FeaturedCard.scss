@@ -11,9 +11,19 @@
         width: 100%;
         aspect-ratio: 16/9;
         margin-bottom: 1rem;
-        // position: relative;
         z-index: 1;
         overflow: hidden;
+
+        img {
+          transition: all 300ms ease-in-out;
+        }
+
+        &:hover,
+        &:focus-visible {
+          img {
+            transform: scale(1.03);
+          }
+        }
     }
 
     &__info {
@@ -45,10 +55,20 @@
 
         a {
             transition: var(--trans-dur);
+            position: relative;
 
             &:hover {
                 color: var(--clr-a-100);
             }
+        }
+
+        li span {
+          display: block;
+          position: relative;
+
+          .tool-tip {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+          }
         }
     }
 
