@@ -32,15 +32,14 @@
 	--br: 1rem;
 }
 
-main {
-	height: 100vh;
+body {
+  overflow: hidden;
 }
 
 body {
 	background: var(--clr-n-100);
 	font-family: var(--ff-100);
 	font-weight: var(--fw-r);
-	// line-height: var(--lh-s);
 	color: var(--clr-n-300);
 	letter-spacing: .5px;
 }
@@ -67,16 +66,15 @@ body {
 }
 
 section {
-	min-height: 100vh;
+  height: 100vh;
 	display: grid;
 	align-items: center;
-	scroll-snap-align: start;
 	width: min(95%, 1110px);
 	margin-inline: auto;
 	position: relative;
 	padding-left: 60px;
 	padding-right: 60px;
-	// padding-right: var(--pad);
+  scroll-snap-type: start;
 }
 
 .section-wrapper {
@@ -97,9 +95,5 @@ section {
 	:root {
 		--fs-xl: 5.5rem; // 88 - H1
 		--lh-xl: 5.5rem; // 88 - H1
-	}
-
-	section {
-		height: 100vh;
 	}
 }
