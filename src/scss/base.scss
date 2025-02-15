@@ -66,8 +66,7 @@ body {
 }
 
 section {
-  height: 100vh;
-	display: grid;
+  display: grid;
 	align-items: center;
 	width: 65%;
 	margin-inline: auto;
@@ -75,6 +74,7 @@ section {
   scroll-snap-type: start;
 
   @media (min-width: 768px) {
+    height: 100vh;
     width: min(80%, 1110px);
   }
 
