@@ -1,0 +1,136 @@
+.flex {
+	display: flex;
+
+	&.center-m-only {
+		justify-content: center;
+	}
+}
+
+.grid {
+	display: grid;
+}
+
+.underline-hover {
+	text-underline-offset: 15px;
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-decoration-color: var(--clr-a-100);
+	transition: color var(--trans-dur);
+	text-transform: uppercase;
+	transition: all var(--trans-dur);
+	color: var(--clr-n-400);
+
+	&:hover {
+		color: var(--clr-a-100);
+	}
+
+	&:focus {
+		outline-offset: 10px;
+		outline: dashed;
+		outline-width: 2px;
+		outline-color: var(--clr-a-100);
+		text-decoration-thickness: 0;
+		text-decoration-color: transparent;
+	}
+}
+
+.pad {
+	padding: var(--pad);
+
+	&--inline {
+		padding-inline: var(--pad);
+	}
+
+	&--block {
+		padding-block: var(--pad);
+	}
+
+	&--l {
+		padding-left: var(--pad);
+	}
+
+	&--r {
+		padding-right: var(--pad);
+	}
+}
+
+.m {
+	&--t {
+		&-10 {
+			margin-top: 10px;
+		}
+
+		&-20 {
+			margin-top: 20px;
+		}
+
+		&-30 {
+			margin-top: 30px;
+		}
+
+		&-40 {
+			margin-top: 40px;
+		}
+
+		&-50 {
+			margin-top: 50px;
+		}
+	}
+
+	&--b {
+		&-10 {
+			margin-bottom: 10px;
+		}
+
+		&-20 {
+			margin-bottom: 20px;
+		}
+
+		&-30 {
+			margin-bottom: 30px;
+		}
+
+		&-40 {
+			margin-bottom: 40px;
+		}
+
+		&-50 {
+			margin-bottom: 50px;
+		}
+	}
+
+	&-block {
+		&-10 {
+			margin-block: 10px;
+		}
+
+		&-20 {
+			margin-block: 20px;
+		}
+
+		&-30 {
+			margin-block: 30px;
+		}
+
+		&-40 {
+			margin-block: 40px;
+		}
+
+		&-50 {
+			margin-block: 50px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.flex {
+		&.center-m-only {
+			justify-content: flex-start;
+		}
+	}
+}
+
+::selection {
+	background-color: var(--clr-a-100);
+	color: black;
+}
