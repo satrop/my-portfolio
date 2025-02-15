@@ -69,12 +69,18 @@ section {
   height: 100vh;
 	display: grid;
 	align-items: center;
-	width: min(95%, 1110px);
+	width: 65%;
 	margin-inline: auto;
 	position: relative;
-	padding-left: 60px;
-	padding-right: 60px;
   scroll-snap-type: start;
+
+  @media (min-width: 768px) {
+    width: min(80%, 1110px);
+  }
+
+  &#projects {
+    height: auto;
+  }
 }
 
 .section-wrapper {

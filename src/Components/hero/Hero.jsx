@@ -137,7 +137,6 @@ const Hero = ({ id }) => {
 								variants={icon}>
 								<a href="#" onClick={openDialog}>
 									<ToolTip
-										isButton={true}
 										content="Résumé"
 										label={'View Steves résumé'}>
 										<RxFileText />

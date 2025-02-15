@@ -8,12 +8,12 @@ import './scss/main.scss';
 
 export default function App() {
 	return (
-		<>
+		<main>
 			<Navigation />
 			<Hero id="top" />
 			<About id="about" />
 			<Skills id="skills" />
 			<Projects id="projects" />
-		</>
+		</main>
 	);
 }

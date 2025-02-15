@@ -72,6 +72,14 @@
       "title": "Demo Projects",
       "projects": [
         {
+          "title": "REST Countries API",
+          "skills": ["Tailwind", "Next.js", "TypeScript", "REST API", "Framer Motion"],
+          "links": {
+            "linkOne": "https://rest-countries-khaki-kappa.vercel.app/",
+            "linkTwo": "https://github.com/satrop/rest-countries"
+          }
+        },
+        {
           "title": "Calculator App",
           "skills": ["Tailwind", "Next.js"],
           "links": {

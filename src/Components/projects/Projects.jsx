@@ -27,18 +27,10 @@ const Projects = ({ id }) => {
 			<div className="section-wrapper">
 				<LineDraw />
 				<TextAnimation text={"A\xA0Few\xA0Sites\xA0I've\xA0Built"} />
-				<motion.div
-					className="project"
-					variants={projects}
-					initial="start"
-					whileInView="end">
-					<div className="projects-wrapper">
-						<FeaturedCard />
-					</div>
-            <div className="standard-card-wrapper">
-              <StandardCard />
-            </div>
-				</motion.div>
+				<div>
+          <FeaturedCard />
+          <StandardCard />
+				</div>
 			</div>
 		</section>
 	);

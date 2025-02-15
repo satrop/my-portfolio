@@ -7,7 +7,7 @@ import './StandardCard.scss';
 
 const StandardCard = () => {
   return (
-    <div className="standard-cards-wrapper">
+    <>
       {Object.keys(cardsData.standard).map((sectionKey, index) => {
         const section = cardsData.standard[sectionKey];
         return (
@@ -46,7 +46,7 @@ const StandardCard = () => {
           </div>
         );
       })}
-    </div>
+    </>
   );
 };
 
