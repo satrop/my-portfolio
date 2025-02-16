@@ -24,7 +24,12 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Print build logs if build fails
+        if: failure()
+        run: cat /home/runner/work/my-portfolio/my-portfolio/.astro/logs/*.log
+
       - name: Deploy to GitHub Pages
+        if: success()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
