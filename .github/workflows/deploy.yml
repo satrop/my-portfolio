@@ -32,14 +32,14 @@ jobs:
 
       - name: Build Astro site
         run: |
-          npm run build
+          npm run build > build.log 2>&1
         continue-on-error: true
 
       - name: Print build logs
         if: failure()
         run: |
           echo "Build failed. Printing logs..."
-          cat ./dist/build.log
+          cat build.log
 
       - name: Configure Git
         run: |
