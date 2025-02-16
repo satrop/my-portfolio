@@ -31,7 +31,15 @@ jobs:
         run: npm list
 
       - name: Build Astro site
-        run: npm run build
+        run: |
+          npm run build
+        continue-on-error: true
+
+      - name: Print build logs
+        if: failure()
+        run: |
+          echo "Build failed. Printing logs..."
+          cat ./dist/build.log
 
       - name: Configure Git
         run: |
@@ -39,6 +47,7 @@ jobs:
           git config --global user.email 'stevenportas@example.com'
 
       - name: Deploy to GitHub Pages
+        if: success()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
