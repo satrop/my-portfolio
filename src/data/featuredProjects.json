@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "title": "ADML",
+      "image": "/images/featured/1.jpg",
+      "technologies": ["SCSS", "HTML", "jQuery", "Twig"],
+      "links": {
+        "live": "https://myadlm.org/"
+      }
+    },
+    {
+      "title": "Wilson Center",
+      "image": "/images/featured/2.jpg",
+      "technologies": ["SCSS", "HTML", "jQuery", "Twig"],
+      "links": {
+        "live": "https://www.wilsoncenter.org/"
+      }
+    },
+    {
+      "title": "Whitman College",
+      "image": "/images/featured/3.jpg",
+      "technologies": ["SCSS", "HTML", "jQuery"],
+      "links": {
+        "live": "https://www.whitman.edu/"
+      }
+    }
+  ]
+}

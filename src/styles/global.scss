@@ -1,0 +1,251 @@
+:root {
+  // Colors
+  --green-100: #041a10; // Dark Green
+  --green-200: #4ce19e; // Light Green
+  --green-300: #083b24; // Faded Green
+  --green-400: #072a1a; // Deep Green
+
+  // Typography
+  --font-family: 'Manrope', sans-serif;
+
+  // Timing
+  --timing: 0.3s ease-in-out;
+}
+
+// Site Settings
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--green-100);
+  font-family: var(--font-family);
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: white;
+  display: grid;
+  place-items: center;
+  gap: 100vh;
+}
+
+.site-wrapper {
+  width: min(80%, 100%);
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+// Overrides
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h4 {
+  color: var(--green-200)
+}
+
+p {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  max-width: 90ch;
+  line-height: 1.8;
+  margin: 0;
+}
+
+// UL Reset
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// Article Styles
+article {
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+  padding-block: 5rem;
+  padding-left: 10px;
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding-block: 8rem;
+    border: solid var(--green-300);
+    border-width: 1px 0;
+  }
+
+  @media (width >= 768px) {
+    padding-left: 0;
+  }
+}
+
+section:last-of-type {
+  margin-bottom: 300px;
+}
+
+// Tooltip Styles
+.tooltip {
+  position: relative;
+
+  span {
+    visibility: hidden;
+    background-color: var(--green-200);
+    color: var(--green-100);
+    width: max-content;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover span,
+  &:focus-within span {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+  }
+
+  &--left {
+    span {
+      top: 50%;
+      left: 250%;
+      transform: translateY(-50%);
+    }
+
+    &:hover span,
+    &:focus-within span {
+      top: 50%;
+      left: 200%;
+    }
+  }
+}
+
+// Typography
+h2 {
+  width: max-content;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  letter-spacing: .07rem;
+  position: relative;
+  margin-bottom: 1rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -1.5rem;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 3px;
+    background-color: var(--green-200);
+  }
+}
+
+@media (width >= 768px) {
+  // Animation
+  @keyframes scaleIn {
+    from {
+      transform: scale(2);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fromLeft {
+    from {
+      transform: translateX(-25%);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fromRight {
+    from {
+      transform: translateX(25%);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleSmallIn {
+    from {
+      transform: scale(.8);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .animation {
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
+    &--left {
+      animation-timeline: view(block 85% 0%);
+      animation-name: fromLeft;
+    }
+
+    &--right {
+      animation-timeline: view(block 85% 0%);
+      animation-name: fromRight;
+    }
+
+    &--scale-in {
+      animation-timeline: view(block 30% 5%);
+      animation-name: scaleIn;
+    }
+
+    &--scale-small-in {
+      animation-timeline: view(block 80% 10%);
+      animation-name: scaleSmallIn;
+    }
+
+    &--fade-in {
+      animation-timeline: view(block 85% 0%);
+      animation-name: fadeIn;
+    }
+  }
+}

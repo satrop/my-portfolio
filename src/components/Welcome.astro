@@ -1,0 +1,132 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<article id="top" class="welcome">
+  <div class="inner">
+    <div class="welcome__eyebrow">
+      Nice to meet you!
+    </div>
+    <h1>I'm Steve Portas</h1>
+    <p>
+      I'm a frontend engineer specializing and on occasion, designing outstanding digital experiences. I'm focused on building accessible ready sites for humans.
+    </p>
+    <ul>
+      <li class="tooltip">
+        <a
+          href="/Steve-Portas-Resume.pdf.zip" download
+          aria-label="Download my résumé"
+        ><Icon name="ph:file-pdf-thin" /></a>
+        <span>Download my Résumé</span>
+      </li>
+      <li class="tooltip">
+        <a
+          href="https://github.com/satrop"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Check out my GitHub Account"
+        >
+          <Icon name="ph:github-logo-thin" />
+        </a>
+        <span>GitHub</span>
+      </li>
+      <li class="tooltip">
+        <a
+          href="https://www.linkedin.com/in/steven-portas/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Got to my LinkedIn Account"
+        >
+          <Icon name="ph:linkedin-logo-thin" />
+        </a>
+        <span>LinkedIn</span>
+      </li>
+      <li class="tooltip">
+        <a
+          href="https://www.frontendmentor.io/profile/satrop"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Have a look at my Frontend Mentor Profile"
+        >
+          <Icon name="simple-icons:frontendmentor" />
+        </a>
+        <span>Frontend Mentor</span>
+      </li>
+      <li class="tooltip">
+        <a
+          href="https://codepen.io/satrop"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Take a peak at my CodePen Account"
+        >
+          <Icon name="ph:codepen-logo-thin" />
+        </a>
+        <span>CodePen</span>
+      </li>
+    </ul>
+  </div>
+</article>
+
+<style lang="scss">
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      letter-spacing: .07rem;
+    }
+
+    .welcome {
+      &__eyebrow {
+        font-size: clamp(1rem, 3vw, 1.5rem);
+        color: var(--green-200);
+      }
+
+      ul {
+        display: flex;
+        gap: 2rem;
+        margin-top: 1rem;
+
+        li {
+          position: relative;
+
+          a {
+            color: white;
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            transition: all 0.3s ease-in-out;
+            outline: 0;
+
+            &:hover {
+              color: var(--green-200);
+            }
+
+            &:focus-visible {
+              outline: 2px solid var(--green-200);
+              outline-offset: 4px;
+            }
+          }
+
+          .tooltip {
+            visibility: hidden;
+            background-color: var(--green-200);
+            color: var(--green-100);
+            width: max-content;
+            text-align: center;
+            border-radius: 4px;
+            padding: 0.5rem;
+            position: absolute;
+            z-index: 1;
+            top: 130%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover .tooltip,
+          &:focus-within .tooltip {
+            visibility: visible;
+            opacity: 1;
+            top: 100%;
+          }
+        }
+      }
+    }
+</style>
