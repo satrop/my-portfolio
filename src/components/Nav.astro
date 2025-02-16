@@ -1,0 +1,80 @@
+---
+---
+
+<nav class="simple-nav">
+  <ul>
+    <li class="tooltip tooltip--left">
+      <a href="#top"></a>
+      <span>Back To Top</span>
+    </li>
+    <li class="tooltip tooltip--left">
+      <a href="#about"></a>
+      <span>About me</span>
+    </li>
+    <li class="tooltip tooltip--left">
+      <a href="#skills"></a>
+      <span>My Skills</span>
+    </li>
+    <li class="tooltip tooltip--left">
+      <a href="#projects"></a>
+      <span>Past Projects</span>
+    </li>
+    <li class="tooltip tooltip--left">
+      <a href="#demos"></a>
+      <span>Demos</span>
+    </li>
+  </ul>
+</nav>
+
+<style lang="scss">
+.simple-nav {
+  position: fixed;
+  z-index: 1000;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+
+      a {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: var(--green-200);
+        display: block;
+        opacity: .25;
+        transition: all 0.3s ease-in-out;
+        scroll-behavior: smooth;
+        outline: none;
+
+        &:hover,
+        &:focus {
+          color: var(--green-200);
+          opacity: 1;
+          animation: sonar-ping 1s infinite;
+        }
+      }
+    }
+  }
+}
+
+@keyframes sonar-ping {
+  0% {
+    box-shadow: 0 0 0 0 rgba(white, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(white, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(white, 0);
+  }
+}
+</style>

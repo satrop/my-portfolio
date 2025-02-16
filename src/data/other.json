@@ -1,0 +1,133 @@
+{
+  "live": [
+    {
+      "title": "Aperio Group",
+      "technologies": ["SCSS", "HTML", "jQuery"],
+      "links": {
+        "linkOne": "https://www.aperiogroup.com/"
+      }
+    },
+    {
+      "title": "Baker Boyer Bank",
+      "technologies": ["SCSS", "HTML", "jQuery"],
+      "links": {
+        "linkOne": "https://www.bakerboyer.com/"
+      }
+    },
+    {
+      "title": "Omnicell",
+      "technologies": ["SCSS", "HTML", "jQuery"],
+      "links": {
+        "linkOne": "https://www.omnicell.com/"
+      }
+    },
+    {
+      "title": "Westfield Insurance",
+      "technologies": ["SCSS", "HTML", "jQuery"],
+      "links": {
+        "linkOne": "https://www.westfieldinsurance.com/"
+      }
+    },
+    {
+      "title": "Boston Architectural College",
+      "technologies": ["SCSS", "HTML", "jQuery"],
+      "links": {
+        "linkOne": "https://the-bac.edu/"
+      }
+    },
+    {
+      "title": "LSUS",
+      "technologies": ["SCSS", "HTML", "jQuery"],
+      "links": {
+        "linkOne": "https://www.lsus.edu/"
+      }
+    },
+    {
+      "title": "JFI",
+      "technologies": ["SCSS", "HTML", "jQuery"],
+      "links": {
+        "linkOne": "https://jfi.org/"
+      }
+    },
+    {
+      "title": "KUMC",
+      "technologies": ["SCSS", "HTML", "jQuery"],
+      "links": {
+        "linkOne": "https://www.kumc.edu/"
+      }
+    },
+    {
+      "title": "EWEB",
+      "technologies": ["SCSS", "HTML", "jQuery"],
+      "links": {
+        "linkOne": "https://www.eweb.org/"
+      }
+    }
+  ],
+  "demo":[
+    {
+      "title": "REST Countries API",
+      "technologies": ["Tailwind", "Next.js", "TypeScript", "REST API", "Framer Motion"],
+      "links": {
+        "github": "https://rest-countries-khaki-kappa.vercel.app/",
+        "live": "https://github.com/satrop/rest-countries"
+      }
+    },
+    {
+      "title": "Calculator App",
+      "technologies": ["Tailwind", "Next.js"],
+      "links": {
+        "github": "https://calculator-app-six-pi.vercel.app/",
+        "live": "https://github.com/satrop/calculator-app"
+      }
+    },
+    {
+      "title": "Easybank",
+      "technologies": ["Tailwind", "Next.js", "TypeScript"],
+      "links": {
+        "github": "https://easybank-two-livid.vercel.app//",
+        "live": "https://github.com/satrop/easybank"
+      }
+    },
+    {
+      "title": "Designo",
+      "technologies": ["SCSS", "HTML", "React.js"],
+      "links": {
+        "github": "https://satrop.github.io/Designo/",
+        "live": "https://github.com/satrop/Designo"
+      }
+    },
+    {
+      "title": "The Planets",
+      "technologies": ["SCSS", "HTML", "React.js"],
+      "links": {
+        "github": "https://satrop.github.io/Planets_Fact_Site/",
+        "live": "https://github.com/satrop/Planets_Fact_Site"
+      }
+    },
+    {
+      "title": "Arch Studio",
+      "technologies": ["SCSS", "HTML", "React.js"],
+      "links": {
+        "github": "https://satrop.github.io/arch-studio/#/",
+        "live": "https://github.com/satrop/arch-studio"
+      }
+    },
+    {
+      "title": "Space Tourism",
+      "technologies": ["SCSS", "HTML", "React.js"],
+      "links": {
+        "github": "https://satrop.github.io/Space_Tourism/",
+        "live": "https://github.com/satrop/Space_Tourism"
+      }
+    },
+    {
+      "title": "Audiophile",
+      "technologies": ["SCSS", "HTML", "React.js"],
+      "links": {
+        "github": "https://satrop.github.io/audiophile/#/",
+        "live": "https://github.com/satrop/audiophile"
+      }
+    }
+  ]
+}
