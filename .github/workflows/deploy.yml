@@ -16,10 +16,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'
+          node-version: '18'
 
       - name: Install dependencies
         run: npm install
+
+      - name: Clear npm cache
+        run: npm cache clean --force
 
       - name: Build the project
         run: npm run build
