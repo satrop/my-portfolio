@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18.17.1'
+          node-version: '18.19.0'
 
       - name: Print Node.js version
         run: node -v
