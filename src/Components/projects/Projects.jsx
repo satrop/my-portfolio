@@ -1,7 +1,6 @@
 import FeaturedCard from '../featured-card/FeaturedCard';
 import StandardCard from '../standard-card/StandardCard';
 
-import { motion } from 'framer-motion';
 import LineDraw from '../LineDraw';
 import TextAnimation from '../TextAnimation';
 

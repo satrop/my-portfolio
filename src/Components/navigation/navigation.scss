@@ -1,6 +1,6 @@
 .main-navigation {
     position: fixed;
-    left: 14px;
+    left: 5%;
     top: 50%;
     margin-top: -100px;
     // transform: translateY(-50%);
@@ -45,8 +45,6 @@ html {
 
 @media (min-width: 1800px) {
     .main-navigation {
-        left: 20%;
-
         .nav-link {
             width: 2rem;
         }

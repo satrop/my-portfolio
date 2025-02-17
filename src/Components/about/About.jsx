@@ -1,8 +1,15 @@
-import PicLG from '/img/pic_lg.webp';
 import { motion } from 'framer-motion';
 import LineDraw from '../LineDraw';
 import TextAnimation from '../TextAnimation';
 import aboutData from './about.json';
+
+const PicLG = `${import.meta.env.BASE_URL}img/pic_lg.webp`;
+
+const fixedData = Array.isArray(aboutData) ? aboutData.map(item => ({
+  ...item,
+  largeImg: `${import.meta.env.BASE_URL}${item.largeImg}`,
+  smallImg: `${import.meta.env.BASE_URL}${item.smallImg}`,
+})) : [];
 
 import './about.scss';
 
