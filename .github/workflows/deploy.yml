@@ -20,14 +20,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          rm -rf node_modules
           npm install
 
       - name: Verify dependencies
         run: npm ls
-
-      - name: Clear npm cache
-        run: npm cache clean --force
 
       - name: Build the project
         run: npm run build
@@ -39,4 +35,4 @@ jobs:
           git config --global user.name 'satrop'
           git config --global user.email 'stevenportas@me.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          npm run deploy
+          npm run deploy || { echo 'Deploy failed, cleaning up...'; npm cache clean --force; exit 1; }
