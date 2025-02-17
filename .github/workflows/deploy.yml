@@ -33,10 +33,11 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
 
-      - name: Upload GitHub Pages Artifact
-        uses: actions/upload-pages-artifact@v2
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
         with:
-          path: dist
+            name: build
+            path: dist
 
       - name: Deploy
         uses: actions/deploy-pages@v2
