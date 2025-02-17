@@ -28,8 +28,11 @@ jobs:
       - name: Build Vite Site
         run: npm run build  # Builds the Vite project
 
+      - name: List Files in Dist
+        run: ls -la ./dist  # Debugging: List files to ensure the dist folder is being generated correctly
+
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3  # Deploys the build to GitHub Pages
+        uses: actions/deploy-pages@v2  # Deploys the build to GitHub Pages
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # Uses the GitHub token for authentication
+          publish_dir: ./dist  # Path to the build output directory
