@@ -27,6 +27,13 @@ jobs:
       - name: Build Vite Site
         run: npm run build
 
+      - name: Ensure gh-pages branch exists
+        run: |
+          git fetch origin gh-pages || git checkout --orphan gh-pages
+          git reset --hard
+          git commit --allow-empty -m "Initialize gh-pages branch"
+          git push origin gh-pages
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -36,8 +43,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-            name: build
-            path: dist
+          name: build
+          path: dist
 
       - name: Deploy
         uses: actions/deploy-pages@v2
