@@ -1,35 +1,35 @@
 :root {
-	//Colors
-	--clr-n-100: hsl(0, 0%, 8%); // Black
-	--clr-n-200: hsl(0, 0%, 60%); // Dark Gray
-	--clr-n-300: hsl(0, 0%, 85%); // Light Gray
-	--clr-n-400: hsl(0, 0%, 100%); // White
+  //Colors
+  --clr-n-100: hsl(0, 0%, 8%); // Black
+  --clr-n-200: hsl(0, 0%, 60%); // Dark Gray
+  --clr-n-300: hsl(0, 0%, 85%); // Light Gray
+  --clr-n-400: hsl(0, 0%, 100%); // White
 
-	--clr-a-100: #4ce19e; // Green
-	--clr-a-200: hsla(7, 100%, 68%); // Red
+  --clr-a-100: #4ce19e; // Green
+  --clr-a-200: hsla(7, 100%, 68%); // Red
 
-	//Fonts
-	--ff-100: 'Manrope', sans-serif;
+  //Fonts
+  --ff-100: "Manrope", sans-serif;
 
-	--fw-l: 300; // light
-	--fw-r: 500; // Med
-	--fw-b: 700; // Bld
+  --fw-l: 300; // light
+  --fw-r: 500; // Med
+  --fw-b: 700; // Bld
 
-	--fs-s: 1.125rem; // 18 - Body
-	--fs-m: 1.5rem; // 24 - H3
-	--fs-l: 3rem; // 48 - H2
-	--fs-xl: 2.5rem; // 40 - H1
+  --fs-s: 1.125rem; // 18 - Body
+  --fs-m: 1.5rem; // 24 - H3
+  --fs-l: 3rem; // 48 - H2
+  --fs-xl: 2.5rem; // 40 - H1
 
-	--lh-s: 1.75rem; // 28 - Body
-	--lh-m: 2rem; // 32 - H3
-	--lh-l: 3.5rem; // 56 - H2
-	--lh-xl: 2.5rem; // 40 - H1
+  --lh-s: 1.75rem; // 28 - Body
+  --lh-m: 2rem; // 32 - H3
+  --lh-l: 3.5rem; // 56 - H2
+  --lh-xl: 2.5rem; // 40 - H1
 
-	--trans-dur: 0.3s ease-in-out;
+  --trans-dur: 0.3s ease-in-out;
 
-	--pad: 0.89rem;
+  --pad: 0.89rem;
 
-	--br: 1rem;
+  --br: 1rem;
 }
 
 body {
@@ -37,41 +37,41 @@ body {
 }
 
 body {
-	background: var(--clr-n-100);
-	font-family: var(--ff-100);
-	font-weight: var(--fw-r);
-	color: var(--clr-n-300);
-	letter-spacing: .5px;
+  background: var(--clr-n-100);
+  font-family: var(--ff-100);
+  font-weight: var(--fw-r);
+  color: var(--clr-n-300);
+  letter-spacing: 0.5px;
 }
 
 .nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 100000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000000;
 
-	a {
-		cursor: pointer;
-	}
+  a {
+    cursor: pointer;
+  }
 }
 
 .sr-only:not(:focus):not(:active) {
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 section {
   display: grid;
-	align-items: center;
+  align-items: center;
   min-height: 100vh;
-	width: 65%;
-	margin-inline: auto;
-	position: relative;
+  width: 65%;
+  margin-inline: auto;
+  position: relative;
   scroll-snap-type: start;
 
   @media (min-width: 768px) {
@@ -84,22 +84,22 @@ section {
 }
 
 .section-wrapper {
-	border: solid rgba(#fff, .05);
-	border-width: 1px 0;
-	padding-block: 6rem;
+  border: solid rgba(#fff, 0.05);
+  border-width: 1px 0;
+  padding-block: 6rem;
 }
 
 @media (min-width: 768px) {
-	:root {
-		--fs-xl: 4.5rem; // 72 - H1
-		--lh-xl: 4.5rem; // 72 - H1
-		--pad: 1.785rem;
-	}
+  :root {
+    --fs-xl: 4.5rem; // 72 - H1
+    --lh-xl: 4.5rem; // 72 - H1
+    --pad: 1.785rem;
+  }
 }
 
 @media (min-width: 1440px) {
-	:root {
-		--fs-xl: 5.5rem; // 88 - H1
-		--lh-xl: 5.5rem; // 88 - H1
-	}
+  :root {
+    --fs-xl: 5.5rem; // 88 - H1
+    --lh-xl: 5.5rem; // 88 - H1
+  }
 }
